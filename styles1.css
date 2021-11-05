@@ -1,0 +1,20 @@
+@font-face {
+    font-family: SFProDisplay-Regular; 
+    src: url(addition/SFProDisplay-Regular.ttf); 
+}
+    
+.body{
+    font-family: SFProDisplay-Regular;  
+    color:whitesmoke;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  form{
+      font-size: 24px; 
+  }
+  #calculateResult{
+      margin-top: 10px;
+  }
+  #count{
+      margin-top: 10px;
+  }
