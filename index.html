@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>task6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="shortcut icon" href="https://vk.com/images/stickers/9606/128.png" type="image/png">
+    <meta name="title" content="Товары">
+    <meta name="keywords" content="Товар1, Товар2, краснодар, Товар3, купить, Свойство1, Свойство2, магазин"/>
+    <meta name="description" content="На нашем сайте Вы можете купить товары." />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <header itemscope itemtype="http://schema.org/WPHeader">
+      <div id="header">
+        <h1 itemprop="name" class="name"> Продажа товаров </h1>
+      </div>
+    </header>
+    <main>
+      <div id="mainer">
+        <p class="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <a href="#about" itemprop="url">Описание</a>
+          <a href="#comments" itemprop="url">Отзывы</a>
+          <a href="#address" itemprop="url">Наш адрес</a>
+          <a href="#params" itemprop="url">Заказ</a>
+        </p>
+
+        <div id="about">
+          <p></p>
+         
+          <p class="abouta">Если Вы хотите обрести крутой товар, у нас он есть.</p>
+        </div>
+
+        <div id="comments">
+          <div class="kard mt-3">
+            <div itemscope itemtype="http://schema.org/Review">
+              <meta itemprop="datePublished" content="2019-28-10 20:18:00"/>
+              <div class="container row">
+                <span class="ml-3" itemprop="author"><b>Первый товар</b></span>
+              </div>
+              <h6 class="ml-3" itemprop="reviewBody">
+                    Свойство1
+              </h6>
+              <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+                <div class="text-right mr-2" itemprop="name">Второй товар</div>
+              </div>
+            </div>
+          </div>
+          <div class="kard mt-3">
+            <div itemscope itemtype="http://schema.org/Review">
+              <meta itemprop="datePublished" content="2019-29-10 20:08:00"/>
+              <div class="container row">
+                <span class="ml-3" itemprop="author"></span>
+              </div>
+              <h6 class="ml-3" itemprop="reviewBody">
+                    Свойство 2
+              </h6>
+              <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="name">Третий товар</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="kard mt-3">
+            <div itemscope itemtype="http://schema.org/Review">
+              <meta itemprop="datePublished" content="2019-18-10 20:00:06"/>
+             
+              <h6  class="ml-3" itemprop="reviewBody">
+              Свойство3
+              </h6>
+              <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="params" itemscope itemtype="http://schema.org/Offer">
+          <meta itemprop="price" content="100.00">
+          <meta itemprop="priceCurrency" content="RUB">
+          <h2>Заказ</h2>
+          <form method="post">               
+            <label>
+              Тип:<br>
+              <select class="type" name="type">
+                <option value="None">Выберите тип:</option>
+                <option value="Madridian">Товар1</option>
+                <option value="Katalonian">Товар2</option>
+                <option value="Gibraltarian">Товар3</option>
+              </select>
+            </label><br><br>
+            <div id="par">
+            
+            </div>
+            <label>Количество:<br>
+              <input name="field-kolvo" value="" type="number" placeholder="0" id="kolvo">
+            </label><br><br>
+          </form>
+          <link itemprop="availability" href="http://schema.org/InStock">
+        </div>
+        <div id="summa">
+            
+        </div>
+      </div>
+    </main>
+    <footer itemscope itemtype="https://schema.org/WPFooter">
+      <div itemscope itemtype="http://schema.org/Organization">
+        <div itemprop="name">@Товары Inc.</div>
+        Контактная информация: 
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <div>Почтовый адрес:
+            <span itemprop="streetAddress">ул. Ставропольская д. 149</span>,
+            <span itemprop="postalCode">350040</span>,
+            <span itemprop="addressLocality">Краснодар, Россия</span>
+            </div>
+          </div> 
+          <div>Телефон:
+            <span itemprop="telephone">+7 (900) 000-00-00</span>,
+            E-mail: <span itemprop="email">email@mail.com</span>
+          </div>
+        </div>
+        <div>
+            (c) Zemlyakov <span itemprop="copyrightYear">2021</span>
+        </div>
+        </footer>
+  </body>
+</html>
